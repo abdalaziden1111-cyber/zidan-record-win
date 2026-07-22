@@ -1,0 +1,41 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2470"/>
+      <stop offset="55%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="18%" r="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dot" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#ff6b5e"/>
+      <stop offset="60%" stop-color="#ff3b30"/>
+      <stop offset="100%" stop-color="#d92419"/>
+    </radialGradient>
+  </defs>
+
+  <!-- macOS-style rounded square -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#glow)"/>
+  <rect x="106" y="106" width="812" height="812" rx="180" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="6"/>
+
+  <!-- A Z lettermark -->
+  <text x="337" y="655" text-anchor="middle"
+        font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+        font-weight="800" font-size="430" fill="#ffffff">A</text>
+  <text x="687" y="655" text-anchor="middle"
+        font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+        font-weight="800" font-size="430" fill="#ffffff">Z</text>
+
+  <!-- record dot as the "." of A.Z -->
+  <circle cx="512" cy="618" r="52" fill="url(#dot)"/>
+  <circle cx="512" cy="618" r="52" fill="none" stroke="#ffffff" stroke-opacity="0.85" stroke-width="7"/>
+
+  <!-- wordmark -->
+  <text x="512" y="800" text-anchor="middle"
+        font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+        font-weight="600" font-size="74" letter-spacing="20" fill="#e9e2ff">ZIDAN RECORD</text>
+</svg>

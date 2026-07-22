@@ -1,0 +1,85 @@
+{
+  "id": "recordly.click-sounds",
+  "name": "Click Sounds",
+  "version": "1.1.0",
+  "description": "Plays a click sound on every mouse click (preview + export)",
+  "author": "Zidan Record",
+  "main": "index.js",
+  "permissions": ["audio"],
+  "contributes": {
+    "sounds": [
+      {
+        "id": "default-click",
+        "label": "Default Click",
+        "category": "click",
+        "file": "sounds/click.mp3"
+      },
+      {
+        "id": "dragon-click",
+        "label": "Dragon Click",
+        "category": "click",
+        "file": "sounds/dragon-studio-mouse-click-398644.mp3"
+      },
+      {
+        "id": "dragon-sfx",
+        "label": "Dragon SFX",
+        "category": "click",
+        "file": "sounds/dragon-studio-mouse-click-sfx-444806.mp3"
+      },
+      {
+        "id": "soft-click",
+        "label": "Soft Click",
+        "category": "click",
+        "file": "sounds/matthewvakaliuk73627-mouse-click-290204.mp3"
+      },
+      {
+        "id": "double-click",
+        "label": "Double Click",
+        "category": "click",
+        "file": "sounds/mixkit-fast-double-click-on-mouse-275.wav"
+      },
+      {
+        "id": "modern-select",
+        "label": "Modern Select",
+        "category": "click",
+        "file": "sounds/mixkit-modern-technology-select-3124.wav"
+      },
+      {
+        "id": "sci-fi",
+        "label": "Sci-Fi Click",
+        "category": "click",
+        "file": "sounds/mixkit-sci-fi-click-900.wav"
+      },
+      {
+        "id": "select-click",
+        "label": "Select Click",
+        "category": "click",
+        "file": "sounds/mixkit-select-click-1109.wav"
+      },
+      {
+        "id": "reality-click",
+        "label": "Reality Click",
+        "category": "click",
+        "file": "sounds/soundreality-sound-of-mouse-click-4-478760.mp3"
+      },
+      {
+        "id": "mechanical-02",
+        "label": "Mechanical 02",
+        "category": "click",
+        "file": "sounds/universfield-computer-mouse-click-02-383961.mp3"
+      },
+      {
+        "id": "mechanical",
+        "label": "Mechanical",
+        "category": "click",
+        "file": "sounds/universfield-computer-mouse-click-352734.mp3"
+      },
+      {
+        "id": "subtle-click",
+        "label": "Subtle Click",
+        "category": "click",
+        "file": "sounds/universfield-mouse-click-351398.mp3"
+      }
+    ]
+  }
+}
