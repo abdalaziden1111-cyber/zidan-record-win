@@ -12,7 +12,9 @@ permissions:
 
 jobs:
   build-windows:
-    runs-on: windows-latest
+    # Pinned: windows-latest now maps to windows-2025-vs2026 (VS 2026), which
+    # node-gyp and our CMake helper scripts can't detect (they expect VS 2022/2019).
+    runs-on: windows-2022
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,9 +41,12 @@ jobs:
         shell: pwsh
         run: |
           npm run build:platform-native-helpers
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npx tsc
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npx vite build
-          npx electron-builder --win dir nsis --x64 --publish never -c.npmRebuild=false -c.buildDependenciesFromSource=false
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npx electron-builder --win dir nsis --x64 --publish never '-c.npmRebuild=false' '-c.buildDependenciesFromSource=false'
 
       - name: Smoke test packaged Windows paths
         run: npm run smoke:packaged-binaries
